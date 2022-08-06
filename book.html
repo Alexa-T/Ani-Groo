@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an appointment</title>
+    <link rel="stylesheet" type="text/css" href="css/style_book.css">
+</head>
+<body>
+    <div id="container">        
+        <a href="index.html">
+            <button class="custom-btn btn-1">Return home</button>
+        </a>        
+        <div id="body_header">          
+          <h1>Appointment Request Form</h1>
+          <p>Make your appointments more easier</p>    
+        </div>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend><span class="number">1</span>Your basic details</legend>
+            <label for="name">Name*:</label>
+            <input type="text" id="name" name="user_name" placeholder="(only first name and last name)" required>
+    
+            <label for="mail">Email*:</label>
+            <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+    
+            <label for="tel">Contact Num:</label>
+            <input type="tel" id="tel" placeholder="Include area code" name="user_num">
+        
+          </fieldset>
+    
+          <fieldset>
+            <legend><span class="number">2</span>Appointment Details</legend>
+            <label for="appointment_fora">Choose your pet:</label>
+            <select id="appointment_fora" name="appointment_fora" required>              
+              <option value="Dog">Dog</option>
+              <option value="Cat">Cat</option>                           
+            </select>
+            <label for="appointment_for">Appointment for:</label>
+            <select id="appointment_for" name="appointment_for" required>
+                <option value="coffee">Choose a service</option>
+              <option value="coffee">Bath</option>
+              <option value="meeting">Teeth cleaning</option>
+              <option value="Business">Nail cutting</option>
+              <option value="lunch">Hair Style</option>              
+            </select>
+            <label for="appointment_description">Appointment Description:</label>
+            <textarea id="appointment_description" name="appointment_description" placeholder="I wish to get an appointment to ... Please include the breed and weight."></textarea>
+            <label for="date">Date*:</label>
+            <input type="date" name="date" value="" required></input>
+            <br>
+            <label for="time">Time*:</label>
+            <input type="time" name="time" value="" required></input>            
+          </fieldset>
+          <button type="submit" style="cursor:pointer;">Request For Appointment</button>
+        </form>
+      </div>    
+</body>
+</html>
